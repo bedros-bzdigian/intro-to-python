@@ -1,2 +1,1 @@
-user_name = input ("please enter your full name: ")
-print ("Welcome !" , user_name)
+x = str (input ("please add 20 numbers: "))
