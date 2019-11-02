@@ -14,4 +14,4 @@ if args.cube:
     y = (args.cube)
 if args.cube1:
     x = (args.cube1)
-print (args.text [args.cube:args.cube1])     
+print (args.text [args.cube : args.cube1])     
