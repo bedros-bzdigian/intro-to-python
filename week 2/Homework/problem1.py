@@ -1,5 +1,5 @@
 import time
-import argprase
+import argparse
 import datetime
 
 parser = argparse.ArgumentParser()
@@ -10,13 +10,14 @@ parser.add_argument("--cube1", help="display a cube of a given number", type=int
 
 args = parser.parse_args()
 
-local_time = time.asctime()
+today = datetime.date.today()
 
-print ("current date: " , local_time)
+print ("current date: " , today)
 if args.cube:
-    print(args.cube)
-if args.cube1:
-    print(args.cube1)
-
-print ("final date is: " , local_time.timedelta(years = args.cube) )
+    tdelta = datetime.timedelta(years = args.cube)
     
+if args.cube1:
+    tdelta = datetime.timedelta(days = args.cube1)
+    
+    
+print ("current date: " , today + tdelta)

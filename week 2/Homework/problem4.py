@@ -2,13 +2,16 @@ import argparse
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("text", help="some text", type=str)
-
+parser.add_argument("text", type= str)
 
 args = parser.parse_args()
 
-print("The given text: " , args.text)
+f = args.text.replace('usa', 'Armenia')
 
-print ( "The syria count is: " , args.text.count('syria') )
+f = f.replace('USA', 'Armenia')
 
-print ("The new string: " , args.text.replace('syria' , 'Armenia'))
+print("The given string :", args.text)
+
+print("The USA/usa count is :", args.text.upper().count('USA'))
+
+print("The new string: ", f)
