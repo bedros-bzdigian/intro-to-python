@@ -14,3 +14,4 @@ new_set = union_ab | intersection_ab
 print ("new_set: " , new_set)
 "chocolate" in new_set
 new_set.remove("oreo")
+print (new_set)
