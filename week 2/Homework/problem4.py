@@ -6,9 +6,7 @@ parser.add_argument("text", type= str)
 
 args = parser.parse_args()
 
-f = args.text.replace('usa', 'Armenia')
-
-f = f.replace('USA', 'Armenia')
+f = args.text.replace('usa', 'Armenia').replace('USA', 'Armenia')
 
 print("The given string :", args.text)
 
