@@ -1,7 +1,7 @@
-from pretty_print import simple_print()
+from pretty_print import simple_print
 
 
-from pretty_print import pro_print ()
+from pretty_print import pro_print
 
 
 def calculate_cube(x):
